@@ -61,9 +61,9 @@ function Filterbar(props) {
               aria-label="Default select example"
             >
               <option>Rent price range</option>
-              <option value="10000">0-10,000</option>
-              <option value="20000">10,000-20,000</option>
-              <option value="40000">20,000-40,000</option>
+              <option value="1">0-10,000</option>
+              <option value="2">10,000-20,000</option>
+              <option value="3">20,000-40,000</option>
             </Form.Select>
           </Col>
           <Col xs lg="2">

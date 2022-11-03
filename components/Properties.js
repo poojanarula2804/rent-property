@@ -81,7 +81,13 @@ function Properties(props) {
         props.filters.location == property.city) &&
       (props.filters.rent == undefined ||
         props.filters.rent == "" ||
-        props.filters.rent >= property.rent) &&
+        (props.filters.rent == 1 && property.rent <= 10000) ||
+        (props.filters.rent == 2 &&
+          property.rent > 10000 &&
+          property.rent <= 20000) ||
+        (props.filters.rent == 3 &&
+          property.rent > 20000 &&
+          property.rent <= 40000)) &&
       (props.filters.type == undefined ||
         props.filters.type == "" ||
         props.filters.type == property.bhk) &&
